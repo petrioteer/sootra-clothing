@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ParallaxBackground from './components/ParallaxBackground'
-import { products, getFeaturedProducts } from './data/products';
+import { getFeaturedProducts } from './data/products';
 
 export default function Home() {
   const featuredProducts = getFeaturedProducts(3);

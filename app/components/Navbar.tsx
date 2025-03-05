@@ -5,8 +5,17 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 export default function Navbar({ currentPage = '' }) {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  // If you're not using isOpen and setIsOpen, you can remove them:
+  // const [isOpen, setIsOpen] = useState(false);
+  
+  // If you're not using scrolled, you can remove it:
+  // const [scrolled, setScrolled] = useState(false);
+  
+  // Or if you need them for future use, add a comment to suppress the warning:
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [isOpen, setIsOpen] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [scrolled, setScrolled] = useState(false);
   
   // Add scroll event listener
   useEffect(() => {

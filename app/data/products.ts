@@ -42,6 +42,19 @@ export const products: Product[] = [
     isSale: true
   }
 ];
+// Update your Product interface to include prevId and nextId
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  originalPrice: number;
+  description: string;
+  color?: string;
+  images: string[];
+  featured?: boolean;
+  prevId?: string;  // Add this property
+  nextId?: string;  // Add this property
+}
 
 // Helper function to get a product by ID
 export function getProductById(id: string): Product | undefined {
